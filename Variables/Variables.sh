@@ -14,3 +14,22 @@ MyFirstLetters=ABC
 echo "The first 10 letters in the alphabet are: ${MyFirstLetters}DEFGHIJ"
 
 #___________________________________________________________________
+
+
+#_3) Encapsulating the variable name with "" will preserve any white space values
+
+greeting='Hello        world!'
+echo $greeting" now with spaces: $greeting"
+
+#___________________________________________________________________
+
+
+#_4) Variables can be assigned with the value of a command output. 
+# This is referred to as substitution. Substitution can be done by 
+# encapsulating the command with `` (known as back-ticks) or with $()
+
+FILELIST=`ls`
+FileWithTimeStamp=/tmp/my-dir/file_$(/bin/date +%Y-%m-%d).txt
+
+#___________________________________________________________________
+
