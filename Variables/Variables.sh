@@ -45,6 +45,7 @@ echo $greeting" now with spaces: $greeting"
 FILELIST=`ls`
 FileWithTimeStamp=/tmp/my-dir/file_$(/bin/date +%Y-%m-%d).txt
 
-# Note that when the script runs, it will run the command inside the $() parenthesis and capture its output.
+# Note that when the script runs, it will run the command inside the 
+# $() parenthesis and capture its output.
 #___________________________________________________________________
 
